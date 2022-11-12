@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		8036D584291FF851003B9666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D583291FF851003B9666 /* AppDelegate.swift */; };
 		8036D586291FF851003B9666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D585291FF851003B9666 /* SceneDelegate.swift */; };
-		8036D588291FF851003B9666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D587291FF851003B9666 /* ViewController.swift */; };
 		8036D58B291FF851003B9666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8036D589291FF851003B9666 /* Main.storyboard */; };
 		8036D58D291FF852003B9666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8036D58C291FF852003B9666 /* Assets.xcassets */; };
 		8036D590291FF852003B9666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8036D58E291FF852003B9666 /* LaunchScreen.storyboard */; };
 		8036D59B291FF853003B9666 /* BengaliDatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D59A291FF853003B9666 /* BengaliDatingTests.swift */; };
 		8036D5A5291FF853003B9666 /* BengaliDatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5A4291FF853003B9666 /* BengaliDatingUITests.swift */; };
 		8036D5A7291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5A6291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift */; };
+		8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5C1291FF9AF003B9666 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		8036D580291FF851003B9666 /* BengaliDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BengaliDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8036D583291FF851003B9666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8036D585291FF851003B9666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8036D587291FF851003B9666 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8036D58A291FF851003B9666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8036D58C291FF852003B9666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8036D58F291FF852003B9666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		8036D5A0291FF853003B9666 /* BengaliDatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BengaliDatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8036D5A4291FF853003B9666 /* BengaliDatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengaliDatingUITests.swift; sourceTree = "<group>"; };
 		8036D5A6291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengaliDatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8036D5C1291FF9AF003B9666 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,14 @@
 		8036D582291FF851003B9666 /* BengaliDating */ = {
 			isa = PBXGroup;
 			children = (
+				8036D5BB291FF93E003B9666 /* Model */,
+				8036D5BC291FF942003B9666 /* View */,
+				8036D5BD291FF948003B9666 /* ViewModel */,
+				8036D5BE291FF94D003B9666 /* Controller */,
+				8036D5C0291FF956003B9666 /* Utils */,
+				8036D5BF291FF952003B9666 /* API */,
 				8036D583291FF851003B9666 /* AppDelegate.swift */,
 				8036D585291FF851003B9666 /* SceneDelegate.swift */,
-				8036D587291FF851003B9666 /* ViewController.swift */,
 				8036D589291FF851003B9666 /* Main.storyboard */,
 				8036D58C291FF852003B9666 /* Assets.xcassets */,
 				8036D58E291FF852003B9666 /* LaunchScreen.storyboard */,
@@ -125,6 +130,49 @@
 				8036D5A6291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift */,
 			);
 			path = BengaliDatingUITests;
+			sourceTree = "<group>";
+		};
+		8036D5BB291FF93E003B9666 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8036D5BC291FF942003B9666 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8036D5BD291FF948003B9666 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8036D5BE291FF94D003B9666 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8036D5C1291FF9AF003B9666 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8036D5BF291FF952003B9666 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8036D5C0291FF956003B9666 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8036D588291FF851003B9666 /* ViewController.swift in Sources */,
 				8036D584291FF851003B9666 /* AppDelegate.swift in Sources */,
 				8036D586291FF851003B9666 /* SceneDelegate.swift in Sources */,
+				8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
