@@ -16,6 +16,8 @@
 		8036D5A5291FF853003B9666 /* BengaliDatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5A4291FF853003B9666 /* BengaliDatingUITests.swift */; };
 		8036D5A7291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5A6291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift */; };
 		8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5C1291FF9AF003B9666 /* HomeController.swift */; };
+		8036D5C4291FFAE4003B9666 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5C3291FFAE4003B9666 /* Extension.swift */; };
+		8036D5C6291FFB59003B9666 /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5C5291FFB59003B9666 /* HomeNavigationStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8036D5A4291FF853003B9666 /* BengaliDatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengaliDatingUITests.swift; sourceTree = "<group>"; };
 		8036D5A6291FF853003B9666 /* BengaliDatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengaliDatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8036D5C1291FF9AF003B9666 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		8036D5C3291FFAE4003B9666 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = ../../../../BengaliDating/BengaliDating/Utils/Extension.swift; sourceTree = "<group>"; };
+		8036D5C5291FFB59003B9666 /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		8036D5BC291FF942003B9666 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8036D5C5291FFB59003B9666 /* HomeNavigationStackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		8036D5C0291FF956003B9666 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8036D5C3291FFAE4003B9666 /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			files = (
 				8036D584291FF851003B9666 /* AppDelegate.swift in Sources */,
 				8036D586291FF851003B9666 /* SceneDelegate.swift in Sources */,
+				8036D5C6291FFB59003B9666 /* HomeNavigationStackView.swift in Sources */,
 				8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */,
+				8036D5C4291FFAE4003B9666 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
