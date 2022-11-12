@@ -17,6 +17,8 @@ class HomeNavigationStackView: UIStackView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        heightAnchor.constraint(equalToConstant: 80).isActive = true
+        appIcon.contentMode = .scaleAspectFit
         
         settingsButton.setImage(UIImage(imageLiteralResourceName: "top_left_profile").withRenderingMode(.alwaysOriginal), for: .normal)
         messageButton.setImage(UIImage(imageLiteralResourceName: "top_messages_icon").withRenderingMode(.alwaysOriginal), for: .normal)
