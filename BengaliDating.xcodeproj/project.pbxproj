@@ -20,6 +20,8 @@
 		8036D5C6291FFB59003B9666 /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5C5291FFB59003B9666 /* HomeNavigationStackView.swift */; };
 		8036D5C92920013F003B9666 /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5C82920013F003B9666 /* BottomControlsStackView.swift */; };
 		8036D5CB29200611003B9666 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5CA29200611003B9666 /* CardView.swift */; };
+		8036D5CD29219672003B9666 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5CC29219672003B9666 /* User.swift */; };
+		8036D5CF292197E6003B9666 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5CE292197E6003B9666 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		8036D5C5291FFB59003B9666 /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStackView.swift; sourceTree = "<group>"; };
 		8036D5C82920013F003B9666 /* BottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlsStackView.swift; sourceTree = "<group>"; };
 		8036D5CA29200611003B9666 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8036D5CC29219672003B9666 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8036D5CE292197E6003B9666 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 		8036D5BB291FF93E003B9666 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8036D5CC29219672003B9666 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		8036D5BD291FF948003B9666 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8036D5CE292197E6003B9666 /* CardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 				8036D5C92920013F003B9666 /* BottomControlsStackView.swift in Sources */,
 				8036D584291FF851003B9666 /* AppDelegate.swift in Sources */,
 				8036D586291FF851003B9666 /* SceneDelegate.swift in Sources */,
+				8036D5CD29219672003B9666 /* User.swift in Sources */,
 				8036D5C6291FFB59003B9666 /* HomeNavigationStackView.swift in Sources */,
 				8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */,
 				8036D5C4291FFAE4003B9666 /* Extension.swift in Sources */,
+				8036D5CF292197E6003B9666 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
