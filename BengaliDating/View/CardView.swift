@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum SwipeDirection: Int {
+    case left = -1
+    case right = 1
+}
+
 class CardView: UIView {
     
     // Mark: - properties
@@ -78,7 +83,7 @@ class CardView: UIView {
         
         switch sender.state {
         case .began:
-            print("Debug: pan did begin")
+            superview?.subviews.forEach({ $0.layer.removeAllAnimations()})
         case .changed:
             panCard(sender: sender)
         case .ended:
@@ -102,10 +107,21 @@ class CardView: UIView {
     }
     
     func resetCardPosition(sender: UIPanGestureRecognizer) {
+        let direction: SwipeDirection = sender.translation(in: nil).x > 100 ? .right : .left
+        let shouldDismissCard = abs(sender.translation(in: nil).x) > 100
         UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, animations: {
-            self.transform = .identity
+            
+            if shouldDismissCard {
+                let xTranslation = CGFloat(direction.rawValue) * 1000
+                let offScreenTransform = self.transform.translatedBy(x: xTranslation, y: 0)
+                self.transform = offScreenTransform
+            } else {
+                self.transform = .identity
+            }
         }) { _ in
-            print("Debug: animation did complete..")
+            if shouldDismissCard {
+                self.removeFromSuperview()
+            }
         }
     }
     
