@@ -75,18 +75,14 @@ class CardView: UIView {
     // Actions
     
     @objc func handlePanGesture(sender: UIPanGestureRecognizer) {
-        let translation = sender.translation(in: nil)
         
         switch sender.state {
         case .began:
             print("Debug: pan did begin")
         case .changed:
-            let degrees: CGFloat = translation.x / 20
-            let angle = degrees * .pi / 180
-            let rotationalTransform = CGAffineTransform(rotationAngle:  angle)
-            self.transform = rotationalTransform.translatedBy(x: translation.x, y: translation.y)
+            panCard(sender: sender)
         case .ended:
-            print("Debug: pan ended")
+            resetCardPosition(sender: sender)
         default: break
         }
     }
@@ -96,6 +92,22 @@ class CardView: UIView {
     }
     
     // Mark: - Helpers
+    
+    func panCard(sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        let degrees: CGFloat = translation.x / 20
+        let angle = degrees * .pi / 180
+        let rotationalTransform = CGAffineTransform(rotationAngle:  angle)
+        self.transform = rotationalTransform.translatedBy(x: translation.x, y: translation.y)
+    }
+    
+    func resetCardPosition(sender: UIPanGestureRecognizer) {
+        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, animations: {
+            self.transform = .identity
+        }) { _ in
+            print("Debug: animation did complete..")
+        }
+    }
     
     func configureGradientLayer() {
         gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
