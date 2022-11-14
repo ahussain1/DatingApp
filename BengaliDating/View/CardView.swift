@@ -28,19 +28,15 @@ class CardView: UIView {
         return iv
     }()
     
-    private let infoLabel: UILabel = {
+    private lazy var infoLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
         
-        let attributedText = NSMutableAttributedString(string: "Jane Doe", attributes: [.font: UIFont.systemFont(ofSize: 32, weight: .heavy), .foregroundColor: UIColor.white])
-        
-        attributedText.append(NSAttributedString(string: "  20", attributes: [.font: UIFont.systemFont(ofSize: 32), .foregroundColor: UIColor.white]))
-        label.attributedText = attributedText
-        
+        label.attributedText = viewModel.userInfoText
         return label
     }()
     
-    private lazy var infoButton: UIButton = {
+    private let infoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(imageLiteralResourceName: "info_icon").withRenderingMode(.alwaysOriginal), for: .normal)
         return button
@@ -54,6 +50,7 @@ class CardView: UIView {
         print("first print line")
         
         configureGestureRecognizers()
+        infoLabel.attributedText = viewModel.userInfoText
         
         imageView.image = viewModel.user.images.first
         
