@@ -96,7 +96,19 @@ class CardView: UIView {
     }
     
     @objc func handleChangePhoto(sender: UITapGestureRecognizer) {
-        print("Did tap on photo")
+        let location = sender.location(in: nil).x
+        let shouldShowNextPhoto = location > self.frame.width / 2
+        
+        print("Debug: location is \(location)")
+        print("Debug: should show next photo is \(shouldShowNextPhoto)")
+        
+        if shouldShowNextPhoto {
+            viewModel.showNextPhoto()
+        } else {
+            viewModel.showPreviousPhoto()
+        }
+        
+        imageView.image = viewModel.imageToShow
     }
     
     // Mark: - Helpers
