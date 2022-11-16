@@ -25,6 +25,7 @@
 		8036D5D229227B53003B9666 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5D129227B53003B9666 /* LoginController.swift */; };
 		8036D5D429227B5F003B9666 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5D329227B5F003B9666 /* RegistrationController.swift */; };
 		8036D5D629246BB7003B9666 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5D529246BB7003B9666 /* CustomTextField.swift */; };
+		8036D5D829246E30003B9666 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5D729246E30003B9666 /* AuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8036D5D129227B53003B9666 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8036D5D329227B5F003B9666 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		8036D5D529246BB7003B9666 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8036D5D729246E30003B9666 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				8036D5C3291FFAE4003B9666 /* Extension.swift */,
 				8036D5D529246BB7003B9666 /* CustomTextField.swift */,
+				8036D5D729246E30003B9666 /* AuthButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8036D5CB29200611003B9666 /* CardView.swift in Sources */,
+				8036D5D829246E30003B9666 /* AuthButton.swift in Sources */,
 				8036D5C92920013F003B9666 /* BottomControlsStackView.swift in Sources */,
 				8036D584291FF851003B9666 /* AppDelegate.swift in Sources */,
 				8036D586291FF851003B9666 /* SceneDelegate.swift in Sources */,
