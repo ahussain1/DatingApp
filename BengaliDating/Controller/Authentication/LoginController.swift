@@ -56,7 +56,7 @@ class LoginController: UIViewController {
     func configureUI() {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
-        configureGradient()
+        configureGradientLayer()
         
         view.addSubview(iconImageView)
         iconImageView.centerX(inView: view)
@@ -72,17 +72,6 @@ class LoginController: UIViewController {
         
         view.addSubview(goToRegistrationButton)
         goToRegistrationButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
-    }
-    
-    private func configureGradient() {
-        let topColor = #colorLiteral(red: 0.9921568627, green: 0.3568627451, blue: 0.3725490196, alpha: 1)
-        let bottomColor = #colorLiteral(red: 0.8974582553, green: 0, blue: 0.4451062679, alpha: 1)
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations  = [0, ]
-        view.layer.addSublayer(gradientLayer)
-        gradientLayer.frame = view.frame
     }
     
 }
