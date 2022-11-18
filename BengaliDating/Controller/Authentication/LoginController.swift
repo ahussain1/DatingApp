@@ -89,6 +89,7 @@ class LoginController: UIViewController {
         
         view.addSubview(goToRegistrationButton)
         goToRegistrationButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
+        hideKeyboardWhenTappedAround()
     }
     
     func checkFormStatus() {

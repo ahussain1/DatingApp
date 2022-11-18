@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A92C456EF390ACF5A0B90AC /* Pods_BengaliDatingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0DB0D01D4DBBA1CEA9A27F /* Pods_BengaliDatingTests.framework */; };
+		43B7C1E710F22527A57EA572 /* Pods_BengaliDating.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F79C90068FCC801E6D1379D /* Pods_BengaliDating.framework */; };
 		8036D584291FF851003B9666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D583291FF851003B9666 /* AppDelegate.swift */; };
 		8036D586291FF851003B9666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D585291FF851003B9666 /* SceneDelegate.swift */; };
 		8036D58B291FF851003B9666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8036D589291FF851003B9666 /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 		8036D5D629246BB7003B9666 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5D529246BB7003B9666 /* CustomTextField.swift */; };
 		8036D5D829246E30003B9666 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5D729246E30003B9666 /* AuthButton.swift */; };
 		8036D5E029253A58003B9666 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036D5DF29253A58003B9666 /* AuthenticationViewModel.swift */; };
+		8062C3C92926D25B0048A7A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8062C3C82926D25B0048A7A6 /* GoogleService-Info.plist */; };
+		8062C3CE2926D6EC0048A7A6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3CD2926D6EC0048A7A6 /* AuthService.swift */; };
+		8062C3D02926D6F20048A7A6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3CF2926D6F20048A7A6 /* Service.swift */; };
+		B86BFB2EAF8B1ECC41454C7C /* Pods_BengaliDating_BengaliDatingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4879A398138EFC21716103A4 /* Pods_BengaliDating_BengaliDatingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0DB0D01D4DBBA1CEA9A27F /* Pods_BengaliDatingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengaliDatingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		171DF9FAFBC242E5BBC531E4 /* Pods-BengaliDating.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDating.release.xcconfig"; path = "Target Support Files/Pods-BengaliDating/Pods-BengaliDating.release.xcconfig"; sourceTree = "<group>"; };
+		46935211F89AF2006851477E /* Pods-BengaliDating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDating.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDating/Pods-BengaliDating.debug.xcconfig"; sourceTree = "<group>"; };
+		4879A398138EFC21716103A4 /* Pods_BengaliDating_BengaliDatingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengaliDating_BengaliDatingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8036D580291FF851003B9666 /* BengaliDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BengaliDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8036D583291FF851003B9666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8036D585291FF851003B9666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +81,14 @@
 		8036D5D529246BB7003B9666 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8036D5D729246E30003B9666 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		8036D5DF29253A58003B9666 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		8062C3C82926D25B0048A7A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8062C3CD2926D6EC0048A7A6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		8062C3CF2926D6F20048A7A6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		910D6B8391E0C7BA60A7F835 /* Pods-BengaliDatingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDatingTests.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDatingTests/Pods-BengaliDatingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F79C90068FCC801E6D1379D /* Pods_BengaliDating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengaliDating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71D2D90F8B785AE4CE5DC78 /* Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F30F62A3FBB5DD467C4D2291 /* Pods-BengaliDatingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDatingTests.release.xcconfig"; path = "Target Support Files/Pods-BengaliDatingTests/Pods-BengaliDatingTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB62632181E59216A7840AC8 /* Pods-BengaliDating-BengaliDatingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDating-BengaliDatingUITests.release.xcconfig"; path = "Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B7C1E710F22527A57EA572 /* Pods_BengaliDating.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A92C456EF390ACF5A0B90AC /* Pods_BengaliDatingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86BFB2EAF8B1ECC41454C7C /* Pods_BengaliDating_BengaliDatingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45978277A24AFB148801842B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46935211F89AF2006851477E /* Pods-BengaliDating.debug.xcconfig */,
+				171DF9FAFBC242E5BBC531E4 /* Pods-BengaliDating.release.xcconfig */,
+				C71D2D90F8B785AE4CE5DC78 /* Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig */,
+				FB62632181E59216A7840AC8 /* Pods-BengaliDating-BengaliDatingUITests.release.xcconfig */,
+				910D6B8391E0C7BA60A7F835 /* Pods-BengaliDatingTests.debug.xcconfig */,
+				F30F62A3FBB5DD467C4D2291 /* Pods-BengaliDatingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8036D577291FF851003B9666 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +139,8 @@
 				8036D599291FF853003B9666 /* BengaliDatingTests */,
 				8036D5A3291FF853003B9666 /* BengaliDatingUITests */,
 				8036D581291FF851003B9666 /* Products */,
+				45978277A24AFB148801842B /* Pods */,
+				C8E66E841DA322B373192217 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,18 +157,19 @@
 		8036D582291FF851003B9666 /* BengaliDating */ = {
 			isa = PBXGroup;
 			children = (
+				8062C3CC2926D6E40048A7A6 /* API */,
 				8036D5BB291FF93E003B9666 /* Model */,
 				8036D5BC291FF942003B9666 /* View */,
 				8036D5BD291FF948003B9666 /* ViewModel */,
 				8036D5BE291FF94D003B9666 /* Controller */,
 				8036D5C0291FF956003B9666 /* Utils */,
-				8036D5BF291FF952003B9666 /* API */,
 				8036D583291FF851003B9666 /* AppDelegate.swift */,
 				8036D585291FF851003B9666 /* SceneDelegate.swift */,
 				8036D589291FF851003B9666 /* Main.storyboard */,
 				8036D58C291FF852003B9666 /* Assets.xcassets */,
 				8036D58E291FF852003B9666 /* LaunchScreen.storyboard */,
 				8036D591291FF852003B9666 /* Info.plist */,
+				8062C3C82926D25B0048A7A6 /* GoogleService-Info.plist */,
 			);
 			path = BengaliDating;
 			sourceTree = "<group>";
@@ -190,13 +227,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		8036D5BF291FF952003B9666 /* API */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		8036D5C0291FF956003B9666 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +246,25 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		8062C3CC2926D6E40048A7A6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8062C3CD2926D6EC0048A7A6 /* AuthService.swift */,
+				8062C3CF2926D6F20048A7A6 /* Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C8E66E841DA322B373192217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F79C90068FCC801E6D1379D /* Pods_BengaliDating.framework */,
+				4879A398138EFC21716103A4 /* Pods_BengaliDating_BengaliDatingUITests.framework */,
+				0A0DB0D01D4DBBA1CEA9A27F /* Pods_BengaliDatingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8036D5AA291FF853003B9666 /* Build configuration list for PBXNativeTarget "BengaliDating" */;
 			buildPhases = (
+				2AF848946B347022B605D443 /* [CP] Check Pods Manifest.lock */,
 				8036D57C291FF851003B9666 /* Sources */,
 				8036D57D291FF851003B9666 /* Frameworks */,
 				8036D57E291FF851003B9666 /* Resources */,
+				4EC91C43F69AF6C863B28B11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8036D5AD291FF853003B9666 /* Build configuration list for PBXNativeTarget "BengaliDatingTests" */;
 			buildPhases = (
+				8715A566639F1493CCB8971F /* [CP] Check Pods Manifest.lock */,
 				8036D592291FF853003B9666 /* Sources */,
 				8036D593291FF853003B9666 /* Frameworks */,
 				8036D594291FF853003B9666 /* Resources */,
@@ -258,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8036D5B0291FF853003B9666 /* Build configuration list for PBXNativeTarget "BengaliDatingUITests" */;
 			buildPhases = (
+				739377610DC97D9669BAC49E /* [CP] Check Pods Manifest.lock */,
 				8036D59C291FF853003B9666 /* Sources */,
 				8036D59D291FF853003B9666 /* Frameworks */,
 				8036D59E291FF853003B9666 /* Resources */,
+				CFD0F7F5B99F65EA4FE40192 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8036D590291FF852003B9666 /* LaunchScreen.storyboard in Resources */,
+				8062C3C92926D25B0048A7A6 /* GoogleService-Info.plist in Resources */,
 				8036D58D291FF852003B9666 /* Assets.xcassets in Resources */,
 				8036D58B291FF851003B9666 /* Main.storyboard in Resources */,
 			);
@@ -342,6 +397,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AF848946B347022B605D443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BengaliDating-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EC91C43F69AF6C863B28B11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BengaliDating/Pods-BengaliDating-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BengaliDating/Pods-BengaliDating-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BengaliDating/Pods-BengaliDating-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		739377610DC97D9669BAC49E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BengaliDating-BengaliDatingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8715A566639F1493CCB8971F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BengaliDatingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD0F7F5B99F65EA4FE40192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8036D57C291FF851003B9666 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -356,9 +514,11 @@
 				8036D5CD29219672003B9666 /* User.swift in Sources */,
 				8036D5C6291FFB59003B9666 /* HomeNavigationStackView.swift in Sources */,
 				8036D5D429227B5F003B9666 /* RegistrationController.swift in Sources */,
+				8062C3D02926D6F20048A7A6 /* Service.swift in Sources */,
 				8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */,
 				8036D5D629246BB7003B9666 /* CustomTextField.swift in Sources */,
 				8036D5C4291FFAE4003B9666 /* Extension.swift in Sources */,
+				8062C3CE2926D6EC0048A7A6 /* AuthService.swift in Sources */,
 				8036D5CF292197E6003B9666 /* CardViewModel.swift in Sources */,
 				8036D5D229227B53003B9666 /* LoginController.swift in Sources */,
 			);
@@ -532,6 +692,7 @@
 		};
 		8036D5AB291FF853003B9666 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46935211F89AF2006851477E /* Pods-BengaliDating.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -560,6 +721,7 @@
 		};
 		8036D5AC291FF853003B9666 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171DF9FAFBC242E5BBC531E4 /* Pods-BengaliDating.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,6 +750,7 @@
 		};
 		8036D5AE291FF853003B9666 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910D6B8391E0C7BA60A7F835 /* Pods-BengaliDatingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -608,6 +771,7 @@
 		};
 		8036D5AF291FF853003B9666 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30F62A3FBB5DD467C4D2291 /* Pods-BengaliDatingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +792,7 @@
 		};
 		8036D5B1291FF853003B9666 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71D2D90F8B785AE4CE5DC78 /* Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -646,6 +811,7 @@
 		};
 		8036D5B2291FF853003B9666 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB62632181E59216A7840AC8 /* Pods-BengaliDating-BengaliDatingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

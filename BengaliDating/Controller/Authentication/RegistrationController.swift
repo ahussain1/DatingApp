@@ -25,6 +25,7 @@ class RegistrationController: UIViewController {
     private let emailTextField = CustomTextField(placeholder: "Email")
     private let fullNameTextField = CustomTextField(placeholder: "Full Name")
     private let passwordTextField = CustomTextField(placeholder: "Password", isSecureField: true)
+    private var profileImage: UIImage?
     
     private var authButton: AuthButton = {
         let button = AuthButton(title: "Sign Up", type: .system)
@@ -38,7 +39,7 @@ class RegistrationController: UIViewController {
         
         attributedTitle.append(NSAttributedString(string: "Sign up", attributes: [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 16)]))
         button.setAttributedTitle(attributedTitle, for: .normal)
-        button.addTarget(self, action: #selector(showLogin), for: .touchUpInside)
+        button.addTarget(RegistrationController.self, action: #selector(showLogin), for: .touchUpInside)
         return button
     }()
     
@@ -55,11 +56,22 @@ class RegistrationController: UIViewController {
         let picker = UIImagePickerController()
         picker.delegate = self
         present(picker, animated: true, completion: nil)
-        print("Debug: handle select photo here...")
     }
     
     @objc func handleRegisterUser() {
-        print("Debug: register user")
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let fullname = fullNameTextField.text else { return }
+        guard var profileImage = profileImage else { return }
+        
+        let credentials = AuthCredentials(email: email, password: password, fullName: fullname, profileImage: profileImage)
+        
+        AuthService.registerUser(withCredentials: credentials) { error in
+            if let error = error {
+                print("Debug: error signing user up \(error.localizedDescription)")
+            }
+        }
+        print("Debug: successfully registered user...")
     }
     
     @objc func showLogin() {
@@ -98,6 +110,7 @@ class RegistrationController: UIViewController {
         view.addSubview(goToLoginButton)
     
         goToLoginButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
+        hideKeyboardWhenTappedAround()
     }
     
     func checkFormStatus() {
@@ -122,6 +135,7 @@ class RegistrationController: UIViewController {
 extension RegistrationController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.originalImage] as? UIImage
+        profileImage = image
         selectPhotoButton.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
         selectPhotoButton.layer.borderColor = UIColor(white: 1, alpha: 0.7).cgColor
         selectPhotoButton.layer.borderWidth = 3
