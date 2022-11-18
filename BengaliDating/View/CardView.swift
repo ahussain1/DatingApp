@@ -47,7 +47,6 @@ class CardView: UIView {
     init(viewModel: CardViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
-        print("first print line")
         
         configureGestureRecognizers()
         infoLabel.attributedText = viewModel.userInfoText
