@@ -32,6 +32,7 @@
 		8062C3C92926D25B0048A7A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8062C3C82926D25B0048A7A6 /* GoogleService-Info.plist */; };
 		8062C3CE2926D6EC0048A7A6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3CD2926D6EC0048A7A6 /* AuthService.swift */; };
 		8062C3D02926D6F20048A7A6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3CF2926D6F20048A7A6 /* Service.swift */; };
+		8062C3D229284B4F0048A7A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3D129284B4F0048A7A6 /* Constants.swift */; };
 		B86BFB2EAF8B1ECC41454C7C /* Pods_BengaliDating_BengaliDatingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4879A398138EFC21716103A4 /* Pods_BengaliDating_BengaliDatingUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		8062C3C82926D25B0048A7A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8062C3CD2926D6EC0048A7A6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8062C3CF2926D6F20048A7A6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8062C3D129284B4F0048A7A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		910D6B8391E0C7BA60A7F835 /* Pods-BengaliDatingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDatingTests.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDatingTests/Pods-BengaliDatingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F79C90068FCC801E6D1379D /* Pods_BengaliDating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengaliDating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71D2D90F8B785AE4CE5DC78 /* Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				8036D5C3291FFAE4003B9666 /* Extension.swift */,
 				8036D5D529246BB7003B9666 /* CustomTextField.swift */,
 				8036D5D729246E30003B9666 /* AuthButton.swift */,
+				8062C3D129284B4F0048A7A6 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8036D5CB29200611003B9666 /* CardView.swift in Sources */,
+				8062C3D229284B4F0048A7A6 /* Constants.swift in Sources */,
 				8036D5D829246E30003B9666 /* AuthButton.swift in Sources */,
 				8036D5E029253A58003B9666 /* AuthenticationViewModel.swift in Sources */,
 				8036D5C92920013F003B9666 /* BottomControlsStackView.swift in Sources */,

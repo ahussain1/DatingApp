@@ -51,7 +51,7 @@ class CardView: UIView {
         configureGestureRecognizers()
         infoLabel.attributedText = viewModel.userInfoText
         
-        imageView.image = viewModel.user.images.first
+//        imageView.image = viewModel.user.images.first
         
         backgroundColor = .systemRed
         layer.cornerRadius = 10
