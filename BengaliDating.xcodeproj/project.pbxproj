@@ -34,6 +34,7 @@
 		8062C3D02926D6F20048A7A6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3CF2926D6F20048A7A6 /* Service.swift */; };
 		8062C3D229284B4F0048A7A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3D129284B4F0048A7A6 /* Constants.swift */; };
 		8062C3D4292940150048A7A6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3D3292940150048A7A6 /* SettingsController.swift */; };
+		8062C3D62929462F0048A7A6 /* SettingsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062C3D52929462F0048A7A6 /* SettingsHeader.swift */; };
 		B86BFB2EAF8B1ECC41454C7C /* Pods_BengaliDating_BengaliDatingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4879A398138EFC21716103A4 /* Pods_BengaliDating_BengaliDatingUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		8062C3CF2926D6F20048A7A6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		8062C3D129284B4F0048A7A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8062C3D3292940150048A7A6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		8062C3D52929462F0048A7A6 /* SettingsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeader.swift; sourceTree = "<group>"; };
 		910D6B8391E0C7BA60A7F835 /* Pods-BengaliDatingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDatingTests.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDatingTests/Pods-BengaliDatingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F79C90068FCC801E6D1379D /* Pods_BengaliDating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengaliDating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71D2D90F8B785AE4CE5DC78 /* Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig"; path = "Target Support Files/Pods-BengaliDating-BengaliDatingUITests/Pods-BengaliDating-BengaliDatingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				8036D5C5291FFB59003B9666 /* HomeNavigationStackView.swift */,
 				8036D5C82920013F003B9666 /* BottomControlsStackView.swift */,
 				8036D5CA29200611003B9666 /* CardView.swift */,
+				8062C3D52929462F0048A7A6 /* SettingsHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				8036D5C2291FF9AF003B9666 /* HomeController.swift in Sources */,
 				8036D5D629246BB7003B9666 /* CustomTextField.swift in Sources */,
 				8036D5C4291FFAE4003B9666 /* Extension.swift in Sources */,
+				8062C3D62929462F0048A7A6 /* SettingsHeader.swift in Sources */,
 				8062C3CE2926D6EC0048A7A6 /* AuthService.swift in Sources */,
 				8036D5CF292197E6003B9666 /* CardViewModel.swift in Sources */,
 				8036D5D229227B53003B9666 /* LoginController.swift in Sources */,
