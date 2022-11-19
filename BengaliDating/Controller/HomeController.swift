@@ -110,6 +110,8 @@ class HomeController: UIViewController {
         
         stack.isLayoutMarginsRelativeArrangement = true
         stack.layoutMargins = .init(top: 0, left: 12, bottom: 0, right: 12)
+        
+        topStack.delegate = self
     }
     
     func presentLoginController() {
