@@ -15,6 +15,10 @@ class HomeController: UIViewController {
     private let topStack = HomeNavigationStackView()
     private let bottomStack = BottomControlsStackView()
     
+    private var viewModels = [CardViewModel]() {
+        didSet {configureCards() }
+    }
+    
     private let deckView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemPink
@@ -28,7 +32,7 @@ class HomeController: UIViewController {
         super.viewDidLoad()
         
         configureUI()
-        configureCards()
+//        configureCards()
         checkIfUserIsLoggedIn()
 //        fetchUser()
         fetchUsers()
@@ -46,6 +50,10 @@ class HomeController: UIViewController {
     
     func fetchUsers() {
         Service.fetchUsers { users in
+            self.viewModels = users.map({ CardViewModel(user: $0)}) // $0 represents each user in the array
+//            users.forEach { user in
+//                let viewModel = CardViewModel(user: user)
+//                self.viewModels.append(viewModel)
             print("Debug: users1: \(users)")
         }
     }
@@ -70,7 +78,13 @@ class HomeController: UIViewController {
     // Mark: - Helpers
     
     func configureCards() {
-//        
+        print("Debug: configure cards now!")
+        viewModels.forEach { viewModel in
+            let cardView = CardView(viewModel: viewModel)
+            deckView.addSubview(cardView)
+            cardView.fillSuperview()
+            
+        }
 //        let user1 = User(name: "Jane Doe", age: 21, images: [UIImage(imageLiteralResourceName: "jane1"), UIImage(imageLiteralResourceName: "jane2"), UIImage(imageLiteralResourceName: "jane3")])
 //
 //        let user2 = User(name: "Megan Smith", age: 22, images: [UIImage(imageLiteralResourceName: "kelly1"), UIImage(imageLiteralResourceName: "kelly2"), UIImage(imageLiteralResourceName: "kelly3")])
