@@ -19,8 +19,21 @@ struct Service {
         }
     }
     
-    func fetchUsers(completion: @escaping([Users]) -> Void) {
+    static func fetchUsers(completion: @escaping([User]) -> Void) {
+        var users = [User]()
         
+        COLLECTION_USERS.getDocuments { (snapshot, error) in
+            snapshot?.documents.forEach({ document in
+                let dictionary = document.data()
+                let user = User(dictionary: dictionary)
+                users.append(user)
+            })
+            if users.count == snapshot?.documents.count {
+                print("Debug: Document count is \(snapshot?.documents.count)")
+                print("Debug: Document count is \(users.count)")
+                completion(users)
+            }
+        }
     }
     
     static func uploadImage(image: UIImage, completion: @escaping(String) -> Void) {

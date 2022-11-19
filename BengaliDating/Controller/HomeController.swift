@@ -30,7 +30,8 @@ class HomeController: UIViewController {
         configureUI()
         configureCards()
         checkIfUserIsLoggedIn()
-        fetchUser()
+//        fetchUser()
+        fetchUsers()
 //        logout()
     }
     
@@ -40,6 +41,12 @@ class HomeController: UIViewController {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         Service.fetchUser(withUid: uid) { user in
             print("Debug: user is \(user.name)")
+        }
+    }
+    
+    func fetchUsers() {
+        Service.fetchUsers { users in
+            print("Debug: users1: \(users)")
         }
     }
     
