@@ -12,7 +12,9 @@ class SettingsController: UITableViewController {
     // properties
 
     private let headerView = SettingsHeader()
-    
+    private let imagePicker = UIImagePickerController()
+    private var imageIndex = 0
+
     // lifecycle
 
     override func viewDidLoad() {
@@ -21,6 +23,8 @@ class SettingsController: UITableViewController {
     }
 
     func configureUI() {
+        headerView.delegate = self
+        imagePicker.delegate = self
         navigationItem.title = "Settings"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.tintColor = .black
@@ -33,6 +37,12 @@ class SettingsController: UITableViewController {
         headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 300)
     }
 
+    // helpers
+
+    func setHeaderImage(image: UIImage?) {
+        headerView.buttons[imageIndex].setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
+    }
+
     // Actions
 
     @objc func handleCancel() {
@@ -42,5 +52,25 @@ class SettingsController: UITableViewController {
     @objc func handleDone() {
         print("Debug: handle done")
     }
-
 }
+
+extension SettingsController: SettingsHeaderDelegate {
+    func settingsHeader(header: SettingsHeader, didSelect index: Int) {
+        present(imagePicker, animated: true, completion: nil)
+        self.imageIndex = index
+        print("Selected button is \(index)")
+    }
+}
+
+extension SettingsController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let selectedImage = info[.originalImage] as? UIImage
+
+        // update photos
+        setHeaderImage(image: selectedImage)
+
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+
