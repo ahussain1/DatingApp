@@ -7,6 +7,9 @@
 
 import UIKit
 
+private let reuseIdentifier = "SettingsCell"
+
+
 class SettingsController: UITableViewController {
 
     // properties
@@ -33,6 +36,7 @@ class SettingsController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleDone))
 
         tableView.tableHeaderView = headerView
+        tableView.register(SettingsCell.self, forCellReuseIdentifier: reuseIdentifier)
 
         headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 300)
     }
@@ -54,6 +58,40 @@ class SettingsController: UITableViewController {
     }
 }
 
+
+// UITableViewDataSource
+extension SettingsController {
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return SettingsSection.allCases.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SettingsCell
+        return cell
+    }
+}
+
+
+// UITableViewDelegate
+extension SettingsController {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 32
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        print("Debug: section is \(section)")
+        guard let section = SettingsSection(rawValue: section) else { return nil }
+        print("Debug: section enum raw value is \(section.rawValue)")
+        print("Debug: Section description is \(section.description) for value \(section.rawValue)")
+        return section.description
+    }
+}
+
+// SettingsHeaderDelegate
 extension SettingsController: SettingsHeaderDelegate {
     func settingsHeader(header: SettingsHeader, didSelect index: Int) {
         present(imagePicker, animated: true, completion: nil)
@@ -62,6 +100,8 @@ extension SettingsController: SettingsHeaderDelegate {
     }
 }
 
+
+// UIImagePickerControllerDelegate
 extension SettingsController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let selectedImage = info[.originalImage] as? UIImage
