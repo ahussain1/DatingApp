@@ -35,10 +35,13 @@ class SettingsController: UITableViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleCancel))
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleDone))
 
+        tableView.separatorStyle = .none
         tableView.tableHeaderView = headerView
+        tableView.backgroundColor = .systemGroupedBackground
         tableView.register(SettingsCell.self, forCellReuseIdentifier: reuseIdentifier)
 
         headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 300)
+        headerView.backgroundColor = .systemPurple
     }
 
     // helpers
@@ -66,7 +69,7 @@ extension SettingsController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -89,13 +92,18 @@ extension SettingsController {
         print("Debug: Section description is \(section.description) for value \(section.rawValue)")
         return section.description
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard let section = SettingsSection(rawValue: indexPath.section) else { return 0}
+        return section == .ageRange ? 96 : 44
+    }
 }
 
 // SettingsHeaderDelegate
 extension SettingsController: SettingsHeaderDelegate {
     func settingsHeader(header: SettingsHeader, didSelect index: Int) {
-        present(imagePicker, animated: true, completion: nil)
         self.imageIndex = index
+        present(imagePicker, animated: true, completion: nil)
         print("Selected button is \(index)")
     }
 }
