@@ -20,7 +20,6 @@ class SettingsCell: UITableViewCell {
         let tf = UITextField()
         tf.borderStyle = .none
         tf.font = UIFont.systemFont(ofSize: 16)
-        tf.placeholder = "Enter value here..."
 
         let paddingView = UIView()
         paddingView.setDimensions(height: 50, width: 28)
@@ -79,6 +78,8 @@ class SettingsCell: UITableViewCell {
     func configure() {
         inputField.isHidden = viewModel.shouldHideInputField
         sliderStack.isHidden = viewModel.shouldHideSlider
+        inputField.placeholder = viewModel.placeHolderText
+        inputField.text = viewModel.value
     }
 
     func createAgeRangeSlider() -> UISlider {
