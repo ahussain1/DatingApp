@@ -12,6 +12,8 @@ class HomeController: UIViewController {
     
     // Mark: - Properties
     
+    private var user: User?
+
     private let topStack = HomeNavigationStackView()
     private let bottomStack = BottomControlsStackView()
     
@@ -34,8 +36,8 @@ class HomeController: UIViewController {
         configureUI()
 //        configureCards()
         checkIfUserIsLoggedIn()
-//        fetchUser()
         fetchUsers()
+        fetchUser()
 //        logout()
     }
     
@@ -44,6 +46,7 @@ class HomeController: UIViewController {
     func fetchUser() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         Service.fetchUser(withUid: uid) { user in
+            self.user = user
             print("Debug: user is \(user.name)")
         }
     }
@@ -123,3 +126,19 @@ class HomeController: UIViewController {
         }
     }
 }
+
+extension HomeController: HomeNavigationStackViewDelegate {
+    func showSettings() {
+        guard let user = self.user else { return }
+        print("Debug: show settings from home controller")
+        let controller = SettingsController(user: user)
+        let nav = UINavigationController(rootViewController: controller)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
+    }
+
+    func showMessages() {
+        print("Debug: show messages from home controller")
+    }
+}
+

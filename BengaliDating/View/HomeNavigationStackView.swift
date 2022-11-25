@@ -55,18 +55,3 @@ class HomeNavigationStackView: UIStackView {
     }
 }
 
-extension HomeController: HomeNavigationStackViewDelegate {
-    func showSettings() {
-        print("Debug: show settings from home controller")
-        let controller = SettingsController()
-        let nav = UINavigationController(rootViewController: controller)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav, animated: true, completion: nil)
-    }
-    
-    func showMessages() {
-        print("Debug: show messages from home controller")
-    }
-    
-    
-}

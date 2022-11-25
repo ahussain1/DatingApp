@@ -13,7 +13,7 @@ enum SettingsSection: Int, CaseIterable {
     case age
     case bio
     case ageRange
-    
+
     var description: String {
         switch self {
             case .name: return "Name"
@@ -23,9 +23,23 @@ enum SettingsSection: Int, CaseIterable {
             case .ageRange: return "Seeking Age Range"
         }
     }
-    
 }
 
 struct SettingsViewModel {
+    private let user: User
+    private let section: SettingsSection
     
+    // properties
+    var shouldHideInputField: Bool {
+        return section == .ageRange
+    }
+
+    var shouldHideSlider: Bool {
+        return section != .ageRange
+    }
+
+    init(user: User, section: SettingsSection){
+        self.user = user
+        self.section = section
+    }
 }
